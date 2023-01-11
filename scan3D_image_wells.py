@@ -38,16 +38,17 @@ class experiment(object):
 
         ## If imaging pre-defined coordinates for hivex well, these keys will not be defined until lsmfx is opened 
         check_for_keys = 'xMin', 'xMax', 'yMin', 'yMax', 'zMin', 'zMax'
-        if check_for_keys in experiment_dict:
-            self.xMin = experiment_dict['xMin']
-            self.xMax = experiment_dict['xMax']
-            self.yMin = experiment_dict['yMin']
-            self.yMax = experiment_dict['yMax']
-            self.zMin = experiment_dict['zMin']
-            self.zMax = experiment_dict['zMax']
-            print('defined all experiment_dict keys')
-        else:
-            print('not all keys are defined yet')
+        for item in check_for_keys:
+	        if item in experiment_dict:
+	            self.xMin = experiment_dict['xMin']
+	            self.xMax = experiment_dict['xMax']
+	            self.yMin = experiment_dict['yMin']
+	            self.yMax = experiment_dict['yMax']
+	            self.zMin = experiment_dict['zMin']
+	            self.zMax = experiment_dict['zMax']
+	            # print('defined all experiment_dict keys')
+	        else:
+	        	pass
 
 
 class scan(object):
