@@ -1,0 +1,5 @@
+microscope file from github page https://github.com/MicronOxford/microscope
+
+has sapphire folder within lasers for control
+
+this folder is just for testing how to control sapphire 561nm laser, not necessary for rest of OTLS3 as of 1-8-20

@@ -1,0 +1,35 @@
+python files and codes can be found in
+C:\Users\User\Documents\3rd Gen LSM\Software and Installation\lsm-control\lsm-python
+
+to run python from command line:
+type "py" to run interactive python command prompts, and "exit()" to get out of it
+or from operating system's cmd, enter "py filename.py" to run a .py file as python
+
+to change directories from operating system's cmd line, type in "cd documents\3rd gen lsm" 
+
+
+
+installs completed on 11/16/19
+python 3.8.0
+entered into cmd.exe: 
+py -m pip install --user numpy
+py -m pip install --user scipy
+py -m pip install --user matplotlib UNSUCCESSFUL
+py -m pip install pyserial (installed pyserial-3.4)
+pip install thorlabs-apt (installed but can't import. don't think i need it though so nevermind)
+pip install h5py (installed h5py-2.10.0)
+pip install tifffile
+py -m pip install nidaqmx (installed version 19.3.1)
+
+cipy matplotlib ipython jupyter" according to https://scipy.org/install.html
+
+
+INSTALLED PYTHON 2 TO OPERATE COHERENT CONTROL FROM GITHUB WHICH IS WRITTEN IN PYTHON2
+after installing python 2
+open python2 from cmd line: "C:\Python27\python
+OR you can write #!python2 at the top of your .py file, and then run "py filename.py" 
+
+installed from cmd.exe:
+C:\Python27\python -m pip install pywin32
+(needed to install win32 bc coherent package was giving errors)
+C:\python27\python -m pip install numpy

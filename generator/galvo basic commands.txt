@@ -1,0 +1,15 @@
+cd C:\Users\User\Documents\OTLS3 Software and Installation\lsm-python
+python
+import generator.ni_LB as generator
+
+## for 20X
+waveform = generator.waveformGenerator(freq = 1000,Xamplitude = 1.90,Xoffset = 2.99,Yamplitude = 0,Yoffset = -1.13) 
+
+## for 5X
+waveform = generator.waveformGenerator(freq = 600,Xamplitude = 6.00,Xoffset = 2.64,Yamplitude = 0,Yoffset = -1.30) 
+
+## To stop galvo (must do this before starting imaging)
+waveform.stop()
+
+## To adjust position along detection axis (affects image sharpness)
+waveform.adjust_Yoffset(-1.18) ##Make small (+/- .01 adjustments for 20X)

@@ -1,0 +1,20 @@
+11-21-19 uninstalled all versions of python, going to reinstall python 2 to be compatible with the laser control package found on github (written in python 2)
+
+installed python 2.7.17 from * 64 bit* 
+from "Windows x86-64 MSI installer"https://www.python.org/downloads/release/python-2717/
+
+installs completed on 11-21-19, entered into cmd.exe:
+py -m pip install --user numpy
+py -m pip install --user scipy
+py -m pip install --user matplotlib
+py -m pip install --user pyserial
+py -m pip install thorlabs-apt
+py -m pip install h5py
+py -m pip install tifffile
+py -m pip install nidaqmx
+
+INSTALLING PYTHON 3.8 NOW
+https://www.python.org/downloads/release/python-380/
+WINDOWS X86-64 executable installer
+
+py -m pip install opencv-contrib-python

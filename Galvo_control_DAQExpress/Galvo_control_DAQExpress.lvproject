@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="0485FF60E64CDA4CE804E9C7F8944A27DF6A8F6883B3250089252F39370122CAC330CF8B5E9FE70E758DC8D2AEE2A95E59B3EC04E6885CDE8960A0F4EBEA726F" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="GComponentFeatureSet" Name="http://www.ni.com/GComponent.xsd" OldestCompatibleVersion="7.1.0.49152" Version="7.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="7.1.0.49153" Version="7.1.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="7.1.0.49153" Version="7.1.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="Desktop SystemDesigner Plugin" Name="http://www.ni.com/SystemDesigner/Desktop/SystemModel" OldestCompatibleVersion="5.1.0.0" Version="5.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="SystemDesigner" Name="http://www.ni.com/SystemDesigner/EnvoyManagement" OldestCompatibleVersion="5.0.0.0" Version="5.0.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="SystemDesigner" Name="http://www.ni.com/SystemDesigner/SystemDiagram" OldestCompatibleVersion="7.1.0.49152" Version="7.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="SystemDesigner" Name="http://www.ni.com/SystemDesigner/SystemModel" OldestCompatibleVersion="7.1.0.49152" Version="7.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="SystemDesigner" Name="http://www.ni.com/SystemDesigner/SystemModelCore" OldestCompatibleVersion="5.1.0.5" Version="5.2.0.49152" />
+		<ApplicationVersionInfo Build="7.1.0.50148" Name="DAQExpress" Version="4.0.0" />
+	</SourceModelFeatureSet>
+	<Project xmlns="http://www.ni.com/PlatformFramework">
+		<EnvoyManagerRootEnvoy Id="1" ModelDefinitionType="EnvoyManagerRootEnvoy" Name="RootEnvoy" />
+		<EmbeddedDefinitionReference Id="2" ModelDefinitionType="NationalInstruments.ProjectExplorer.Modeling.ProjectDataManager" Name="ProjectExplorer">
+			<ProjectExplorer />
+		</EmbeddedDefinitionReference>
+		<EmbeddedDefinitionReference Id="3" ModelDefinitionType="NationalInstruments.SystemDesigner.SystemDiagram.SystemDiagramDefinition" Name="SystemDiagram">
+			<SystemDiagram Id="4" SystemDiagramVersion="75" xmlns="http://www.ni.com/SystemDesigner/SystemDiagram">
+				<EnvoySuperimpositionContainer Id="5" xmlns="http://www.ni.com/SystemDesigner/EnvoyManagement">
+					<MappingManager Id="6" xmlns="http://www.ni.com/SystemDesigner/SystemModelCore">
+						<Instance Id="2912" Source="{http://www.ni.com/SystemDesigner/Desktop/SystemModel}DevSystem">
+							<Symbols p8:Path="[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}DevSystem]DevSystem" p9:Process.AssociatedIdentifier="2913" xmlns:p9="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p8="http://www.ni.com/Core/Proxy" />
+						</Instance>
+						<Superimposition Id="7" Name="Root Superimposition">
+							<Superimpose Source="2912" />
+						</Superimposition>
+					</MappingManager>
+				</EnvoySuperimpositionContainer>
+				<SystemDiagramRootDiagram Id="9" />
+			</SystemDiagram>
+			<NameScopingEnvoy Bindings="InProcessNativeDesktopTarget,AnyTarget,NativeTarget,ContentKind_{http://www.ni.com/SystemDesigner/Desktop/SystemModel}Process.DevSystem,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory,HtmlPanel,NativePanel" Id="2913" ModelDefinitionType="{http://www.ni.com/SystemDesigner/Desktop/SystemModel}DevSystem" Name="DevSystem">
+				<DevSystem xmlns="http://www.ni.com/SystemDesigner/Desktop/SystemModel" />
+				<NameScopingEnvoy Id="32" ModelDefinitionType="BuildSpecification" Name="Interactive">
+					<BuildSpecificationDefinition Id="33" TopLevelComponentRefId="50" xmlns="http://www.ni.com/GComponent.xsd">
+						<CompilerSymbolTable Id="34" xmlns="http://www.ni.com/PlatformFramework" />
+						<ComponentConfigurationReference AssociatedEnvoyId="47" ConfigName="Default" Id="50" />
+						<WeakDefaultComponentConfigurationReference Id="3162b38c4a964d1287658c87de0946ba" PackageName="ni-analysis-basic-src-1.0.8.6.niaddon" Target="AAL_Transforms_Base.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="9bb6171a8669417093db34074921ac74" PackageName="ni-analysis-basic-src-1.0.8.6.niaddon" Target="AAL_Support_Base.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="3318dd10f4294eff922f78843985d7da" PackageName="ni-analysis-basic-src-1.0.8.6.niaddon" Target="AAL_Windows_Base.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="2fea736a654143d8a06ef0d45333273e" PackageName="ni-analysis-basic-src-1.0.8.6.niaddon" Target="AAL_Statistics_Base.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="b918956e885c43ef80141aea697edba4" PackageName="ni-analysis-basic-src-1.0.8.6.niaddon" Target="AAL_Resampling_Base.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="8397cf0615c64953a0de0f88a1adf93d" PackageName="ni-analysis-basic-src-1.0.8.6.niaddon" Target="AAL_Operations_Base.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="cecefd03a472475aa6efdbab9ad9702b" PackageName="ni-analysis-basic-src-1.0.8.6.niaddon" Target="AAL_Measurement_Base.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="9d9d3359c09a451d8789f7e2370bddfa" PackageName="ni-analysis-basic-src-1.0.8.6.niaddon" Target="AAL_Linear_Algebra_Base.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="a656c3dd11c54354b2e42f28d6f6fa75" PackageName="ni-analysis-basic-src-1.0.8.6.niaddon" Target="AAL_Interpolation_Base.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="f1fd7150ac8743a08ea2dab51a87e2ce" PackageName="ni-analysis-basic-src-1.0.8.6.niaddon" Target="AAL_Generation_Base.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="4bc0b5a874fb403da472ef7fbac4c0e8" PackageName="ni-analysis-basic-src-1.0.8.6.niaddon" Target="AAL_Fitting_Base.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="4ff7f8bda1894635b8608eb671d13153" PackageName="ni-analysis-basic-src-1.0.8.6.niaddon" Target="AAL_Filtering_Base.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="27f80f32b9cb4f2bbb5b36a36034e9fe" PackageName="ni-analysis-basic-src-1.0.8.6.niaddon" Target="AAL_Conditioning_Base.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="f03cad2eeb0847d0aa922d5ea0a9242f" PackageName="ni-g-stdlib-src-1.0.6.37.niaddon" Target="NI.G Core.Configuration File (INI).gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="cde431f37d2a408ca10e09d9a2a7476a" PackageName="ni-g-stdlib-src-1.0.6.37.niaddon" Target="NI.G Core.Data Type.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="7af6cbfba5614bf8bcebc3253d5f48c3" PackageName="ni-g-stdlib-src-1.0.6.37.niaddon" Target="NI.G Core.File IO (General).gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="e05046045bf747a280d873abfd58acd9" PackageName="ni-g-stdlib-src-1.0.6.37.niaddon" Target="NI.G Core.Input Devices.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="52f762fdbf7f44bfa729c5a679827dea" PackageName="ni-g-stdlib-src-1.0.6.37.niaddon" Target="NI.G Core.Numeric.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="e9bbff9812f04d9f96941dfb7e51177b" PackageName="ni-g-stdlib-src-1.0.6.37.niaddon" Target="NI.G Core.Operating System.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="fccb82fec5c44e959232a67359c81dc4" PackageName="ni-g-stdlib-src-1.0.6.37.niaddon" Target="NI.G Core.Registry.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="5690ddd3224643b7b42afebbae89f23a" PackageName="ni-g-stdlib-src-1.0.6.37.niaddon" Target="NI.G Core.Rendezvous.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="cbd0b1b3625747aa9f5bf224353c0bf8" PackageName="ni-g-stdlib-src-1.0.6.37.niaddon" Target="NI.G Core.Semaphore.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="64a125cad74642adab34ee655a9c7bc2" PackageName="ni-g-stdlib-src-1.0.6.37.niaddon" Target="NI.G Core.SMTP Email.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="d9db1c96a4f64029a760182b5b718720" PackageName="ni-g-stdlib-src-1.0.6.37.niaddon" Target="NI.G Core.Sound.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="3eb2b114f1564bd88cc116e089d21354" PackageName="ni-g-stdlib-src-1.0.6.37.niaddon" Target="NI.G Core.Strings.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="caded2b591514845a228c2b4dcced436" PackageName="ni-g-stdlib-src-1.0.6.37.niaddon" Target="NI.G Core.TCP.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="94765f43bb1c419b97e4f9f19e2d2903" PackageName="ni-g-stdlib-src-1.0.6.37.niaddon" Target="NI.G Core.TDMS.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="c1c488f1e126459ea4b286036f3cbf9a" PackageName="ni-g-stdlib-src-1.0.6.37.niaddon" Target="NI.G Core.Timed Loop.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="6de7b7e229b04b2085a5adb872b9c14e" PackageName="ni-g-stdlib-src-1.0.6.37.niaddon" Target="NI.G Core.Timing.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="3d0daa17bb984d41a0840b5020497902" PackageName="ni-g-stdlib-src-1.0.6.37.niaddon" Target="NI.G Core.URL.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="4eed0dc0e23e44fdb32812ca5a4870c8" PackageName="ni-g-stdlib-src-1.0.6.37.niaddon" Target="NI.G Core.Waveform.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="e339f6a1ab0c49639c69aba93832d694" PackageName="ni-g-stdlib-src-1.0.6.37.niaddon" Target="NI.G Core.Zip.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="3624c7825f75494b99357bad9cd6387f" PackageName="ni-g-stdlib-src-1.0.6.37.niaddon" Target="NI.G Core.User Interface.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="8069a3f329a94b8c9ccbc8258f925266" PackageName="ni-g-stdlib-src-1.0.6.37.niaddon" Target="NI.G Core.Data Communications.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="9f17784349de411f93e86c626eabbf1a" PackageName="ni-g-stdlib-src-1.0.6.37.niaddon" Target="NI.G Core.Execution Control.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="d06e4460b3484511a6999b43923c05b1" PackageName="ni-g-stdlib-src-1.0.6.37.niaddon" Target="NI.G Core.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="ac8684251b0b4749bcd164e76077b001" PackageName="ni-g-stdlib-src-1.0.6.37.niaddon" Target="NI.G Core.Color Picker.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="ffb882b1c29d4bc191fa460fcbefa851" PackageName="ni-g-stdlib-src-1.0.6.37.niaddon" Target="NI.G Core.Libraries and Executables.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="1eb50f004462410f93680f7f92204bc9" PackageName="ni-mxlc-base-src-19.5.0.niaddon" Target="MXLC.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="527402bca146469b8fe685b62190fb35" PackageName="ni-analysis-controlbasic-src-1.0.8.5.niaddon" Target="Control_Controller.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="cad3b18ff5a24128a2672e83f0ae2d95" PackageName="ni-analysis-controlbasic-src-1.0.8.5.niaddon" Target="Control_Conversion_Base.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="5e3c310ec3d14bd4b85a19f464cfc2d4" PackageName="ni-analysis-controlbasic-src-1.0.8.5.niaddon" Target="Control_PIDGain_Base.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="d4f3097391a64f42b9a59890219b0d55" PackageName="ni-daqmx-api-src-19.5.0.niaddon" Target="DAQmx.gcomp" />
+						<WeakDefaultComponentConfigurationReference Id="5f29f440466b4ab8b22a51313a4b2a7d" PackageName="ni-nativetarget-nativetargetlib-src-4.0.0.0.niaddon" Target="NI.NativeTarget.Template.gcomp" />
+					</BuildSpecificationDefinition>
+					<EmbeddedDefinitionReference Bindings="ComponentMoC" Id="47" ModelDefinitionType="SparseEnvoyManager" Name="Default Component" Reparentable="False">
+						<SparseEnvoyManager Id="48">
+							<SparseEnvoyManagerDependencySource Id="49" Target="::NullTarget::Default Component" />
+						</SparseEnvoyManager>
+						<SourceFileReference Bindings="DAQmx,ContentKind_{http://www.ni.com/SoftFrontPanel/SystemModel}Process.SoftFrontPanel,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="293" ModelDefinitionType="NationalInstruments.InstrumentFramework.Document.SourceModel.Task" Name="Analog Input.task" OverridingModelDefinitionType="NationalInstruments.InstrumentFramework.AnalogInput" StoragePath="Automation Examples\Tasks\Analog Input.task" />
+						<SourceFileReference Bindings="ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="379" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Analog Input.gvi" StoragePath="Automation Examples\Analog Input.gvi" />
+						<SourceFileReference Bindings="ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="417" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Analog Output.gvi" StoragePath="Automation Examples\Analog Output.gvi" />
+						<SourceFileReference Bindings="ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="829" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Counter Input - Events.gvi" StoragePath="Automation Examples\Counter Input - Events.gvi" />
+						<SourceFileReference Bindings="ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="837" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Counter Input - Frequency.gvi" StoragePath="Automation Examples\Counter Input - Frequency.gvi" />
+						<SourceFileReference Bindings="ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="843" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Counter Output.gvi" StoragePath="Automation Examples\Counter Output.gvi" />
+						<SourceFileReference Bindings="ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="852" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Digital Input.gvi" StoragePath="Automation Examples\Digital Input.gvi" />
+						<SourceFileReference Bindings="ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="862" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Digital Output.gvi" StoragePath="Automation Examples\Digital Output.gvi" />
+						<SourceFileReference Bindings="DAQmx,ContentKind_{http://www.ni.com/SoftFrontPanel/SystemModel}Process.SoftFrontPanel,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="2120" ModelDefinitionType="NationalInstruments.InstrumentFramework.Document.SourceModel.Task" Name="Counter Input - Frequency.task" OverridingModelDefinitionType="NationalInstruments.InstrumentFramework.CounterInput" StoragePath="Automation Examples\Tasks\Counter Input - Frequency.task" />
+						<SourceFileReference Bindings="DAQmx,ContentKind_{http://www.ni.com/SoftFrontPanel/SystemModel}Process.SoftFrontPanel,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="2126" ModelDefinitionType="NationalInstruments.InstrumentFramework.Document.SourceModel.Task" Name="Counter Input - Events.task" OverridingModelDefinitionType="NationalInstruments.InstrumentFramework.CounterInput" StoragePath="Automation Examples\Tasks\Counter Input - Events.task" />
+						<SourceFileReference Bindings="DAQmx,ContentKind_{http://www.ni.com/SoftFrontPanel/SystemModel}Process.SoftFrontPanel,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="2197" ModelDefinitionType="NationalInstruments.InstrumentFramework.Document.SourceModel.Task" Name="Analog Output.task" OverridingModelDefinitionType="NationalInstruments.InstrumentFramework.AnalogOutput" StoragePath="Automation Examples\Tasks\Analog Output.task" />
+						<SourceFileReference Bindings="DAQmx,ContentKind_{http://www.ni.com/SoftFrontPanel/SystemModel}Process.SoftFrontPanel,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="2623" ModelDefinitionType="NationalInstruments.InstrumentFramework.Document.SourceModel.Task" Name="Digital Input.task" OverridingModelDefinitionType="NationalInstruments.InstrumentFramework.DigitalInput" StoragePath="Automation Examples\Tasks\Digital Input.task" />
+						<SourceFileReference Bindings="DAQmx,ContentKind_{http://www.ni.com/SoftFrontPanel/SystemModel}Process.SoftFrontPanel,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="2629" ModelDefinitionType="NationalInstruments.InstrumentFramework.Document.SourceModel.Task" Name="Counter Output.task" OverridingModelDefinitionType="NationalInstruments.InstrumentFramework.CounterOutput" StoragePath="Automation Examples\Tasks\Counter Output.task" />
+						<SourceFileReference Bindings="DAQmx,ContentKind_{http://www.ni.com/SoftFrontPanel/SystemModel}Process.SoftFrontPanel,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="2635" ModelDefinitionType="NationalInstruments.InstrumentFramework.Document.SourceModel.Task" Name="Digital Output.task" OverridingModelDefinitionType="NationalInstruments.InstrumentFramework.DigitalOutput" StoragePath="Automation Examples\Tasks\Digital Output.task" />
+						<SourceFileReference Bindings="DAQmx,ContentKind_{http://www.ni.com/SoftFrontPanel/SystemModel}Process.SoftFrontPanel,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="1eb8fe9a6fa74e88b8c726e4dcc1b81c" ModelDefinitionType="NationalInstruments.InstrumentFramework.Document.SourceModel.Task" Name="Analog Output_2.task" OverridingModelDefinitionType="NationalInstruments.InstrumentFramework.AnalogOutput" StoragePath="Analog Output_2.task" />
+					</EmbeddedDefinitionReference>
+					<EmbeddedDefinitionReference Id="67" ModelDefinitionType="RepositoryManagerDefinition" Name="instr.lib" Reparentable="False">
+						<RepositoryManagerDefinition Location="&quot;&lt;AppDir&gt;\\Resources\\instr.lib&quot;" />
+					</EmbeddedDefinitionReference>
+					<EmbeddedDefinitionReference Id="929" ModelDefinitionType="RepositoryManagerDefinition" Name="vi.lib.Common" Reparentable="False">
+						<RepositoryManagerDefinition Location="&quot;&lt;AppDir&gt;\\Resources\\vi.lib\\Common&quot;" />
+					</EmbeddedDefinitionReference>
+					<EmbeddedDefinitionReference Id="930" ModelDefinitionType="RepositoryManagerDefinition" Name="vi.lib.Native" Reparentable="False">
+						<RepositoryManagerDefinition Location="&quot;&lt;AppDir&gt;\\Resources\\vi.lib\\Native&quot;" />
+						<SourceFileReference Id="1220" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="DAQmx Read (Analog 1D Wfm NChan NSamp Duration).gvi" />
+						<SourceFileReference Id="1221" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="DAQmx Start Task.gvi" />
+						<SourceFileReference Id="1222" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="DAQmx Stop Task.gvi" />
+						<SourceFileReference Id="1228" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="DAQmx Fill In Error Info.gvi" />
+						<SourceFileReference Id="1607" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="DAQmx Write (Analog Wfm 1Chan NSamp).gvi" />
+						<SourceFileReference Id="1695" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="DAQmx Read (Counter U32 1Chan 1Samp).gvi" />
+						<SourceFileReference Id="1696" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="DAQmx Read (Counter DBL 1Chan 1Samp).gvi" />
+						<SourceFileReference Id="1697" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="DAQmx Write (Counter Frequency 1Chan 1Samp).gvi" />
+						<SourceFileReference Id="1699" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="DAQmx Read (Digital 1D Bool 1Chan 1Samp).gvi" />
+						<SourceFileReference Id="1700" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="DAQmx Write (Digital 1D Bool 1Chan 1Samp).gvi" />
+						<SourceFileReference Id="2910" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="DAQmx Read (Digital 1D Bool NChan 1Samp 1Line).gvi" />
+						<SourceFileReference Id="2911" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="DAQmx Write (Digital 1D Bool NChan 1Samp 1Line).gvi" />
+					</EmbeddedDefinitionReference>
+					<EmbeddedDefinitionReference Id="1765" ModelDefinitionType="RepositoryManagerDefinition" Name="vi.lib.Fpga" Reparentable="False">
+						<RepositoryManagerDefinition Location="&quot;&lt;AppDir&gt;\\Resources\\vi.lib\\Fpga&quot;" />
+					</EmbeddedDefinitionReference>
+					<EmbeddedDefinitionReference Id="2758" ModelDefinitionType="PackageReferencesDefinition" Name="ProjectReferences">
+						<PackageReferencesDefinition />
+						<SourceFileReference Bindings="EnvoyManager" Id="30793cd2336645118840810a93c61abd" ModelDefinitionType="PackageInterfaceDefinition" Name="ni-analysis-basic-src-1.0.8.6.niaddon" StoragePath="ref://ni/analysis/basic-src/1.0.8.6" />
+						<SourceFileReference Bindings="EnvoyManager" Id="b2f6a7126eed49c98c83f561e090f8a2" ModelDefinitionType="PackageInterfaceDefinition" Name="ni-analysis-controlbasic-src-1.0.8.5.niaddon" StoragePath="ref://ni/analysis/controlbasic-src/1.0.8.5" />
+						<SourceFileReference Bindings="EnvoyManager" Id="a1e05c2ce2e14a6fa538b53b38e7ef18" ModelDefinitionType="PackageInterfaceDefinition" Name="ni-daqmx-api-src-19.5.0.niaddon" StoragePath="ref://ni/DAQmx/api-src/19.5.0" />
+						<SourceFileReference Bindings="EnvoyManager" Id="ba88d210c97548979a5e3fb8543cc410" ModelDefinitionType="PackageInterfaceDefinition" Name="ni-g-stdlib-src-1.0.6.37.niaddon" StoragePath="ref://ni/G/stdlib-src/1.0.6.37" />
+						<SourceFileReference Bindings="EnvoyManager" Id="79b0a6fae39943f8a2cdaa764dd4fec1" ModelDefinitionType="PackageInterfaceDefinition" Name="ni-mxlc-base-src-19.5.0.niaddon" StoragePath="ref://ni/MXLC/Base-src/19.5.0" />
+						<SourceFileReference Bindings="EnvoyManager" Id="17cbbe4ec83246fcb8ff6a4209a62412" ModelDefinitionType="PackageInterfaceDefinition" Name="ni-nativetarget-nativetargetlib-src-4.0.0.0.niaddon" StoragePath="ref://ni/nativetarget/nativetargetlib-src/4.0.0.0" />
+					</EmbeddedDefinitionReference>
+				</NameScopingEnvoy>
+				<EmbeddedDefinitionReference Id="2ec2469f49d14efaa75c2a914c07742f" ModelDefinitionType="RepositoryManagerDefinition" Name="vi.lib.Fpga" Reparentable="False">
+					<RepositoryManagerDefinition Location="&quot;&lt;AppDir&gt;\\Resources\\vi.lib\\Fpga&quot;" />
+				</EmbeddedDefinitionReference>
+				<EmbeddedDefinitionReference Id="fc77054c26534196b4414f0eb00df24d" ModelDefinitionType="RepositoryManagerDefinition" Name="vi.lib.Native" Reparentable="False">
+					<RepositoryManagerDefinition Location="&quot;&lt;AppDir&gt;\\Resources\\vi.lib\\Native&quot;" />
+				</EmbeddedDefinitionReference>
+				<EmbeddedDefinitionReference Id="c4cbeb114c60421186b80b2b64ce3b0d" ModelDefinitionType="RepositoryManagerDefinition" Name="vi.lib.Common" Reparentable="False">
+					<RepositoryManagerDefinition Location="&quot;&lt;AppDir&gt;\\Resources\\vi.lib\\Common&quot;" />
+				</EmbeddedDefinitionReference>
+				<EmbeddedDefinitionReference Id="28b5e10223ed468ea100434e4989b80b" ModelDefinitionType="RepositoryManagerDefinition" Name="instr.lib" Reparentable="False">
+					<RepositoryManagerDefinition Location="&quot;&lt;AppDir&gt;\\Resources\\instr.lib&quot;" />
+				</EmbeddedDefinitionReference>
+			</NameScopingEnvoy>
+		</EmbeddedDefinitionReference>
+		<NameScopingEnvoy Id="10" ModelDefinitionType="NullTarget" Name="NullTarget">
+			<NullTarget />
+			<EmbeddedDefinitionReference Bindings="{http://www.ni.com/GComponent.xsd}ComponentBaseType_Library" Id="35" ModelDefinitionType="ComponentDefinition" Name="Default Component">
+				<ComponentDefinition DefaultConfigurationName="Default" Id="36" RootNamespaceId="35" xmlns="http://www.ni.com/GComponent.xsd">
+					<Icon Id="37" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+						<IconPanel Height="[float]40" Id="38" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="39" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="40" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="41" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+								<FileNameText Attached="[bool]True" Id="42" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]Default Component" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
+									<FontSetting FontFamily="Verdana" FontSize="6" Id="43" />
+								</FileNameText>
+							</IconTemplate>
+						</IconPanel>
+					</Icon>
+					<CompilerSymbolTable Id="44" xmlns="http://www.ni.com/PlatformFramework" />
+					<ComponentConfiguration Id="45" Name="Default">
+						<CompilerSymbolTable Id="46" xmlns="http://www.ni.com/PlatformFramework" />
+					</ComponentConfiguration>
+				</ComponentDefinition>
+				<SourceFileReference Bindings="DAQmx,ContentKind_{http://www.ni.com/SoftFrontPanel/SystemModel}Process.SoftFrontPanel,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="294" ModelDefinitionType="NationalInstruments.InstrumentFramework.Document.SourceModel.Task" Name="Analog Input.task" OverridingModelDefinitionType="NationalInstruments.InstrumentFramework.AnalogInput" StoragePath="Automation Examples\Tasks\Analog Input.task" />
+				<SourceFileReference Bindings="ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="380" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Analog Input.gvi" StoragePath="Automation Examples\Analog Input.gvi" />
+				<SourceFileReference Bindings="ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="418" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Analog Output.gvi" StoragePath="Automation Examples\Analog Output.gvi" />
+				<SourceFileReference Bindings="ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="830" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Counter Input - Events.gvi" StoragePath="Automation Examples\Counter Input - Events.gvi" />
+				<SourceFileReference Bindings="ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="838" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Counter Input - Frequency.gvi" StoragePath="Automation Examples\Counter Input - Frequency.gvi" />
+				<SourceFileReference Bindings="ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="844" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Counter Output.gvi" StoragePath="Automation Examples\Counter Output.gvi" />
+				<SourceFileReference Bindings="ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="853" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Digital Input.gvi" StoragePath="Automation Examples\Digital Input.gvi" />
+				<SourceFileReference Bindings="ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="863" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Digital Output.gvi" StoragePath="Automation Examples\Digital Output.gvi" />
+				<SourceFileReference Bindings="DAQmx" Id="2121" ModelDefinitionType="NationalInstruments.InstrumentFramework.Document.SourceModel.Task" Name="Counter Input - Frequency.task" OverridingModelDefinitionType="NationalInstruments.InstrumentFramework.CounterInput" StoragePath="Automation Examples\Tasks\Counter Input - Frequency.task" />
+				<SourceFileReference Bindings="DAQmx" Id="2127" ModelDefinitionType="NationalInstruments.InstrumentFramework.Document.SourceModel.Task" Name="Counter Input - Events.task" OverridingModelDefinitionType="NationalInstruments.InstrumentFramework.CounterInput" StoragePath="Automation Examples\Tasks\Counter Input - Events.task" />
+				<SourceFileReference Bindings="DAQmx" Id="2198" ModelDefinitionType="NationalInstruments.InstrumentFramework.Document.SourceModel.Task" Name="Analog Output.task" OverridingModelDefinitionType="NationalInstruments.InstrumentFramework.AnalogOutput" StoragePath="Automation Examples\Tasks\Analog Output.task" />
+				<SourceFileReference Bindings="DAQmx,ContentKind_{http://www.ni.com/SoftFrontPanel/SystemModel}Process.SoftFrontPanel,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="2624" ModelDefinitionType="NationalInstruments.InstrumentFramework.Document.SourceModel.Task" Name="Digital Input.task" OverridingModelDefinitionType="NationalInstruments.InstrumentFramework.DigitalInput" StoragePath="Automation Examples\Tasks\Digital Input.task" />
+				<SourceFileReference Bindings="DAQmx,ContentKind_{http://www.ni.com/SoftFrontPanel/SystemModel}Process.SoftFrontPanel,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="2630" ModelDefinitionType="NationalInstruments.InstrumentFramework.Document.SourceModel.Task" Name="Counter Output.task" OverridingModelDefinitionType="NationalInstruments.InstrumentFramework.CounterOutput" StoragePath="Automation Examples\Tasks\Counter Output.task" />
+				<SourceFileReference Bindings="DAQmx,ContentKind_{http://www.ni.com/SoftFrontPanel/SystemModel}Process.SoftFrontPanel,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="2636" ModelDefinitionType="NationalInstruments.InstrumentFramework.Document.SourceModel.Task" Name="Digital Output.task" OverridingModelDefinitionType="NationalInstruments.InstrumentFramework.DigitalOutput" StoragePath="Automation Examples\Tasks\Digital Output.task" />
+				<SourceFileReference Bindings="DAQmx" Id="33065c16d76e45f5bd0962a02583c106" ModelDefinitionType="NationalInstruments.InstrumentFramework.Document.SourceModel.Task" Name="Analog Output_2.task" OverridingModelDefinitionType="NationalInstruments.InstrumentFramework.AnalogOutput" StoragePath="Analog Output_2.task" />
+			</EmbeddedDefinitionReference>
+			<EmbeddedDefinitionReference Id="69" ModelDefinitionType="PackageReferencesDefinition" Name="ProjectReferences">
+				<PackageReferencesDefinition>
+					<PackageInterfaceDefinitionContents Contents="AAL_Transforms_Base.gcomp,AAL_Support_Base.gcomp,AAL_Windows_Base.gcomp,AAL_Statistics_Base.gcomp,AAL_Resampling_Base.gcomp,AAL_Operations_Base.gcomp,AAL_Measurement_Base.gcomp,AAL_Linear_Algebra_Base.gcomp,AAL_Interpolation_Base.gcomp,AAL_Generation_Base.gcomp,AAL_Fitting_Base.gcomp,AAL_Filtering_Base.gcomp,AAL_Conditioning_Base.gcomp" Id="74ae6dd7e0924844bd74ce475a1327c4" PackageInterfaceDefinitionEnvoyId="87395d4bcab74748940327bc89380b69" />
+					<PackageInterfaceDefinitionContents Contents="NI.G Core.Configuration File (INI).gcomp,NI.G Core.Data Type.gcomp,NI.G Core.File IO (General).gcomp,NI.G Core.Input Devices.gcomp,NI.G Core.Numeric.gcomp,NI.G Core.Operating System.gcomp,NI.G Core.Registry.gcomp,NI.G Core.Rendezvous.gcomp,NI.G Core.Semaphore.gcomp,NI.G Core.SMTP Email.gcomp,NI.G Core.Sound.gcomp,NI.G Core.Strings.gcomp,NI.G Core.TCP.gcomp,NI.G Core.TDMS.gcomp,NI.G Core.Timed Loop.gcomp,NI.G Core.Timing.gcomp,NI.G Core.URL.gcomp,NI.G Core.Waveform.gcomp,NI.G Core.Zip.gcomp,NI.G Core.User Interface.gcomp,NI.G Core.Data Communications.gcomp,NI.G Core.Execution Control.gcomp,NI.G Core.gcomp,NI.G Core.Color Picker.gcomp,NI.G Core.Libraries and Executables.gcomp" Id="770acf6947884761bbd61e729275fbbf" PackageInterfaceDefinitionEnvoyId="b9c6dc02ee844c86ac16da688da74cae" />
+					<PackageInterfaceDefinitionContents Contents="MXLC.gcomp" Id="28342fefc84d44a7b56d046303a27eee" PackageInterfaceDefinitionEnvoyId="26853a8ed1c94d8ab6c4859da9569042" />
+					<PackageInterfaceDefinitionContents Contents="Control_Controller.gcomp,Control_Conversion_Base.gcomp,Control_PIDGain_Base.gcomp" Id="f8bfc3686a9544a6b8a15f1e23bb9233" PackageInterfaceDefinitionEnvoyId="a18fa81942084a9ea49e100d5a149ecb" />
+					<PackageInterfaceDefinitionContents Contents="DAQmx.gcomp" Id="e67a02b595b24de599de62ad3e9808af" PackageInterfaceDefinitionEnvoyId="920c50719ae240caa9432c305683ffa9" />
+					<PackageInterfaceDefinitionContents Contents="NI.NativeTarget.Template.gcomp" Id="d93daa87d6be43dc9b8ae781c60dd215" PackageInterfaceDefinitionEnvoyId="86266b79262741f88580cac58a56a10c" />
+				</PackageReferencesDefinition>
+				<SourceFileReference Bindings="EnvoyManager" Id="87395d4bcab74748940327bc89380b69" ModelDefinitionType="PackageInterfaceDefinition" Name="ni-analysis-basic-src-1.0.8.6.niaddon" StoragePath="ref://ni/analysis/basic-src/1.0.8.6" />
+				<SourceFileReference Bindings="EnvoyManager" Id="a18fa81942084a9ea49e100d5a149ecb" ModelDefinitionType="PackageInterfaceDefinition" Name="ni-analysis-controlbasic-src-1.0.8.5.niaddon" StoragePath="ref://ni/analysis/controlbasic-src/1.0.8.5" />
+				<SourceFileReference Bindings="EnvoyManager" Id="920c50719ae240caa9432c305683ffa9" ModelDefinitionType="PackageInterfaceDefinition" Name="ni-daqmx-api-src-19.5.0.niaddon" StoragePath="ref://ni/DAQmx/api-src/19.5.0" />
+				<SourceFileReference Bindings="EnvoyManager" Id="b9c6dc02ee844c86ac16da688da74cae" ModelDefinitionType="PackageInterfaceDefinition" Name="ni-g-stdlib-src-1.0.6.37.niaddon" StoragePath="ref://ni/G/stdlib-src/1.0.6.37" />
+				<SourceFileReference Bindings="EnvoyManager" Id="26853a8ed1c94d8ab6c4859da9569042" ModelDefinitionType="PackageInterfaceDefinition" Name="ni-mxlc-base-src-19.5.0.niaddon" StoragePath="ref://ni/MXLC/Base-src/19.5.0" />
+				<SourceFileReference Bindings="EnvoyManager" Id="86266b79262741f88580cac58a56a10c" ModelDefinitionType="PackageInterfaceDefinition" Name="ni-nativetarget-nativetargetlib-src-4.0.0.0.niaddon" StoragePath="ref://ni/nativetarget/nativetargetlib-src/4.0.0.0" />
+			</EmbeddedDefinitionReference>
+			<SourceFileReference Id="336" ModelDefinitionType="NationalInstruments.HtmlGuidedHelpFramework.Model.HtmlGuidedHelp" Name="Workbook.wbx" StoragePath="Automation Examples\Getting Started Workbook\Workbook.wbx" p4:GuidedHelpUniqueId="81efc38a-1980-41b2-9400-9f3f016baa47" xmlns:p4="http://www.ni.com/PlatformFramework" />
+		</NameScopingEnvoy>
+		<NameScopingEnvoy Id="740" ModelDefinitionType="TestPanelScope" Name="TestPanelScope" />
+		<SourceFileReference Id="5fa60da8a1cb4d29b64ac2a52b201a53" ModelDefinitionType="SystemManagementDefinition" Name="SystemDesigner" StoragePath="SystemDesigner" />
+	</Project>
+	<ProjectInformation xmlns="http://www.ni.com/PlatformFramework" />
+</SourceFile>

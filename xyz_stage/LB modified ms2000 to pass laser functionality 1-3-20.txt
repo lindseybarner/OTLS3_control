@@ -1,0 +1,6 @@
+ms2000 file was modified
+
+in def scan(self,bwait):
+
+LB added "laser" so that laser can be turned off immediately after stage finishes scanning
+(rather than previously, it was turned off from lsfmx_LB, which cannot turn off laser until camera buffer is finished loading 

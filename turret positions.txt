@@ -1,0 +1,5 @@
+Turret positions
+
+20X = 35.275
+
+5X = 4.35

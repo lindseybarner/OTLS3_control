@@ -1,0 +1,12 @@
+commands for checking laser works via serial
+open cmd.exe:
+
+cd C:\users\user\documents\3rd gen lsm\software and installation\lsm-control\lsm-python
+py
+import laser.obis as obis
+laser = obis.Obis(baudrate = 9600, port = 'COM14')
+laser.setPower(5)
+laser.turnOn()
+laser.turnOff()
+laser.shutDown()
+exit()

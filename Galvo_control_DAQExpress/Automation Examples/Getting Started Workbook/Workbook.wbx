@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SourceFile xmlns="http://www.ni.com/PlatformFramework" Version="1.1.10.0">
+   <HtmlGuidedHelp>
+ 
+   
+  
+      <Page IsExportable="true" Style="Content"
+            Source="GUID-F9EADB88-D8B2-4A14-8BC9-E4535E821AE4.html"/>
+
+   </HtmlGuidedHelp>
+</SourceFile>

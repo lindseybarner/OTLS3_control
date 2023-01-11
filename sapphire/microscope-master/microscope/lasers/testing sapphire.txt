@@ -1,0 +1,21 @@
+COMMANDS FOR CHECKING SAPPHIRE OPERATION
+if not working, try turning on and off, take USB out of computer and plug back in/turn on
+COM9
+
+launch sapphire2 enviroment in anaconda
+launch terminal
+navigate to directory "C:\Users\AERB\Documents\3rd Gen LSM\Software and Installation\lsm-control\lsm-python\sapphire\microscope-master"
+
+python
+import microscope.lasers.sapphire as sapphire
+laser = sapphire.SapphireLaser(com = 'COM11')
+laser.get_max_power_mw()
+
+other commands:
+laser.initialize()
+laser._on_enable() #(it seems to always give an error on this command, but still turns laser on)
+laser._set_power_mw(2)
+laser.disable()
+
+THIS SHOULD WORK
+if not working, try unconnecting the USB from the computer (silver and blue cord)

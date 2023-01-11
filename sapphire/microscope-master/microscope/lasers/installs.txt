@@ -1,0 +1,4 @@
+to get sapphire working on normal python environment
+install Pyro4
+
+"pip install Pyro4"

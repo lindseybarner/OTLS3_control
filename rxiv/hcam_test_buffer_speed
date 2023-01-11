@@ -1,0 +1,95 @@
+#!/usr/bin/python
+#
+
+# import imagej
+# ij = imagej.init('C:\\Users\\AERB\\Documents\\Fiji.app', headless = False)
+# from imglyb import util
+
+# from jnius import autoclass
+# spimData = autoclass('bdv.spimdata.SpimDataMinimal')
+# spimXML = autoclass('bdv.spimdata.XmlIoSpimDataMinimal')
+# bdvWindow = autoclass('bdv.util.BdvFunctions')
+
+import ctypes
+import ctypes.util
+import numpy
+import time
+import math
+import camera.hamamatsu_camera as hc
+import rs232.RS232 as RS232
+import filter_wheel.fw102c_LB as fw102c_LB
+import laser.obis as obis
+import xyz_stage.ms2000 as ms2000
+# import thorlabs_apt as apt
+import generator.ni_LB as generator
+# import utils.findbounds as findbounds
+import utils.utils as utils
+import utils.background as background
+import h5py
+import warnings
+import os
+import os.path
+import errno
+import sys
+import scipy.ndimage
+import warnings
+import gc
+import nidaqmx
+from os import path
+import shutil
+import logging
+import tifffile
+
+
+hcam = hc.HamamatsuCameraMR(camera_id=0)
+print(hcam)
+
+# Set camera properties
+hcam.setPropertyValue("defect_correct_mode", "OFF") # keep defect mode on
+hcam.setPropertyValue("readout_speed", 2) # 1 or 2. 2 is fastest mode
+hcam.setPropertyValue("exposure_time", expTime/1000.0) # convert from msec to sec
+hcam.setPropertyValue("subarray_hsize", camX)
+hcam.setPropertyValue("subarray_vsize", camY)
+hcam.setPropertyValue("subarray_vpos", 1024-camY/2)
+hcam.setPropertyValue("binning", binFactor)
+
+# Set trigger properties
+hcam.setPropertyValue("trigger_source", 'INTERNAL') # 1 (internal), 2 (external), 3 (software)
+hcam.setPropertyValue("trigger_mode", 'START') # 1 (normal), 6 (start)
+hcam.setPropertyValue("trigger_active", 'EDGE') # 1 (edge), 2 (level), 3 (syncreadout)
+hcam.setPropertyValue("trigger_polarity", 'POSITIVE') # 1 (negative), 2 (positive)
+
+nFrames = 1000
+camY = 256
+camX = 2048
+hcam.setACQMode("fixed_length", nFrames)
+hcam.startAcquisition() #start camera acquisition
+count_old = 0
+count_new = 0
+count = 0
+
+while count < nFrames-1:
+	time.sleep(0.01)
+	# Get frames.
+	print('getting frames')
+	#ts = time.gmtime()
+	#print(time.strftime("%x %X", ts))
+	[frames, dims] = hcam.getFrames()
+	count_old = count
+	# Save frames.
+	for aframe in frames:
+		np_data = aframe.getData()
+		#im.append(numpy.reshape(np_data, (camY, camX)))
+		#im[count] = numpy.clip(numpy.reshape(np_data, (camY, camX)) - bkg, 100*binFactor*binFactor, 65535) - 100*binFactor*binFactor
+		im[count] = numpy.reshape(np_data, (camY, camX)) #orient so camera's vertical FOV is row direction
+		count += 1
+	count_new = count
+	if count_new == count_old:
+		count = nFrames #reached last frame in scan
+	print(str(count_new) + '/' + str(nFrames) + ' frames collected...')
+	#ts = time.gmtime()
+	#print(time.strftime("%x %X", ts))
+	data[count_old:count_new] = im[count_old:count_new]
+hcam.stopAcquisition()
+gc.collect()
+hcam.shutdown()	

@@ -1,0 +1,18 @@
+COMMANDS FOR CHECKING SAPPHIRE OPERATION
+if not working, try turning on and off, take USB out of computer and plug back in/turn on
+COM
+
+launch terminal
+cd C:\Users\User\Documents\OTLS3 Software and Installation\lsm-python
+python
+import laser.sapphire as sapphire
+laser = sapphire.SapphireLaser(com = 'COM13')
+laser.get_max_power_mw()
+
+other commands:
+laser.initialize()
+laser._on_enable() #(it seems to always give an error on this command, but still turns laser on)
+laser._set_power_mw(2)
+laser.disable()
+
+THIS SHOULD WORK

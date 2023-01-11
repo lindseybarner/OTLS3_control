@@ -1,0 +1,6 @@
+cd C:\Users\AERB\Documents\3rd Gen LSM\Software and Installation\lsm-control\lsm-python
+python
+import generator.ni_LB as generator
+waveform = generator.waveformGenerator(freq = 1000,Xamplitude = 1.50,Xoffset = 2.84,Yamplitude = 0,Yoffset = -0.95) 
+waveform.stop()
+waveform.adjust_Yoffset(-1.50)
